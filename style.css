@@ -1,0 +1,71 @@
+/* Body reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* background shade  */
+body{
+    background: radial-gradient(circle,rgb(256,256,256)0%,rgb(0,0,0)100%);
+}
+
+/* Clock Image style*/
+#clock-container{
+    height: 40vw;
+    width: 40vw;
+    margin: auto;
+    margin-top: 10vh;
+    background: url('clock.png') no-repeat center center/cover;
+    border: 1px solid white;
+    border-radius: 273px;
+    position: relative;
+}
+
+/* small circle styling in between */
+#circle{
+    background-color: black;
+    width: 5%;
+    height: 5%;
+    border: 1px solid black;
+    border-radius: 100%;
+    position: absolute;
+    top: 47.6%;
+    left: 47%;
+}
+
+/* Clock hands styling  */
+/* common styling  */
+#hour, #minute, #second{
+    background-color: black;
+    border-radius: 20px;
+    position:  absolute;
+    transform-origin: bottom;
+}
+
+/* Hour hand   */
+#hour{
+    width: 1.4%;
+    height: 22%;
+    top: 28.42%;
+    left: 49.2%;
+    opacity: 0.9;
+    /* border: 1px solid black; */
+}
+
+/* Minute hand  */
+#minute{
+    width: 1%;
+    height: 26%;
+    top: 24.5%;
+    left: 49.46%;
+    opacity: 0.9;
+}
+
+/* Second hand  */
+#second{
+    width: 1%;
+    height: 30%;
+    top: 20.46%;
+    left: 49.56%;
+    opacity: 0.9;
+}
